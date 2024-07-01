@@ -1,0 +1,35 @@
+GET http://localhost:5252/games
+
+###
+
+GET  http://localhost:5252/games/5
+
+###
+
+POST http://localhost:5252/games
+Content-Type: application/json
+
+{
+    "name": "books",
+    "genreID": 5,
+    "Price": 12.5,
+    "releaseDate": "2020-10-01"
+}
+
+###
+
+PUT http://localhost:5252/games/3
+Content-Type: application/json
+
+{
+    "name": "Street fighter III turbo",
+    "genre": "Action and strategie",
+    "price": 50.2,
+    "releaseDate": "2002-12-01"
+}
+
+###
+
+DELETE http://localhost:5252/games/1
+
+
